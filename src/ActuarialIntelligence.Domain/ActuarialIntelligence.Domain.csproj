@@ -43,6 +43,7 @@
     <Compile Include="Calculator Return Objects\HazardPdfCdfHazardTriplet.cs" />
     <Compile Include="ChapmanKolmogorov.cs" />
     <Compile Include="ContainerObjects\BondDetails.cs" />
+    <Compile Include="ContainerObjects\Expectance\Expectance.cs" />
     <Compile Include="ContainerObjects\ListTermCashflowSet.cs" />
     <Compile Include="Date\DateIncrement.cs" />
     <Compile Include="DBHazardPDF.cs" />
@@ -88,7 +89,6 @@
     <Compile Include="Time\TimeIncrement.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ContainerObjects\Expectance\" />
     <Folder Include="Expectance\" />
     <Folder Include="Reader Domain Objects\" />
   </ItemGroup>
