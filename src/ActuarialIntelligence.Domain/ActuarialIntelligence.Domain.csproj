@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D013A73-50B5-451A-BA5E-DA003FA42249}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ActuarialIntelligence.Domain</RootNamespace>
+    <AssemblyName>ActuarialIntelligence.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calculator Return Objects\HazardPdfCdfHazardTriplet.cs" />
+    <Compile Include="ChapmanKolmogorov.cs" />
+    <Compile Include="ContainerObjects\BondDetails.cs" />
+    <Compile Include="ContainerObjects\ListTermCashflowSet.cs" />
+    <Compile Include="Date\DateIncrement.cs" />
+    <Compile Include="DBHazardPDF.cs" />
+    <Compile Include="Enums\DateIncrementTypes.cs" />
+    <Compile Include="Enums\TimeIncrementTypes.cs" />
+    <Compile Include="Financial Instrument Objects\BondHalfYearly.cs" />
+    <Compile Include="Financial Instrument Objects\HalfYearlyBondYield.cs" />
+    <Compile Include="Hazard.cs" />
+    <Compile Include="KaplanMeier.cs" />
+    <Compile Include="Model Containers\ModelContainer.cs" />
+    <Compile Include="ContainerObjects\Nominal.cs" />
+    <Compile Include="ContainerObjects\NominalCashflowSet.cs" />
+    <Compile Include="ContainerObjects\Point.cs" />
+    <Compile Include="ContainerObjects\Points.cs" />
+    <Compile Include="ContainerObjects\SpotYield.cs" />
+    <Compile Include="ContainerObjects\TermCashflowYieldSet.cs" />
+    <Compile Include="ContainerObjects\VectorPoints.cs" />
+    <Compile Include="ContainerObjects\_3Matrix.cs" />
+    <Compile Include="ContainerObjects\_3Vector.cs" />
+    <Compile Include="Enums\FromTo.cs" />
+    <Compile Include="Enums\Term.cs" />
+    <Compile Include="Financial Instrument Objects\ZSpreadSpecificAnnuity.cs" />
+    <Compile Include="Mathematical Technique Objects\GivensRotationMatrix.cs" />
+    <Compile Include="Mathematical Technique Objects\HouseholderBase.cs" />
+    <Compile Include="Mathematical Technique Objects\HouseholderQR.cs" />
+    <Compile Include="Mathematical Technique Objects\Interpolation.cs" />
+    <Compile Include="Mathematical Technique Objects\RotationMatrices.cs" />
+    <Compile Include="Mathematical Technique Objects\SimpleNumericIntegrator.cs" />
+    <Compile Include="Matrix\nIdentityMatrix.cs" />
+    <Compile Include="Matrix\_mnMatrix.cs" />
+    <Compile Include="Matrix\_nMatrix.cs" />
+    <Compile Include="Matrix\_nVector.cs" />
+    <Compile Include="Model Containers\ModelInterfaces\IModel.cs" />
+    <Compile Include="Model Containers\ModelInterfaces\IModelContainer.cs" />
+    <Compile Include="Model Containers\SimpleFunctionContainer.cs" />
+    <Compile Include="NeuralLearners\NeuralLearner.cs" />
+    <Compile Include="NeuralMemmories\NeuralMemmory.cs" />
+    <Compile Include="NeuralProcessors\NeuralProcessor.cs" />
+    <Compile Include="NeuronParametrix\Interfaces\IObject.cs" />
+    <Compile Include="NeuronParametrix\NeuralObject.cs" />
+    <Compile Include="NeuronParametrix\NeuralObjectList.cs" />
+    <Compile Include="NeuronParametrix\Objective.cs" />
+    <Compile Include="ObservationObjects\PairedObservation.cs" />
+    <Compile Include="PnL\AtRisk.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Financial Instrument Objects\ZSpread.cs" />
+    <Compile Include="Regression\BasicRegresssionCalcs.cs" />
+    <Compile Include="Regression\UnivariateRegressionFitting.cs" />
+    <Compile Include="StatAIEntities.cs" />
+    <Compile Include="Time\TimeIncrement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reader Domain Objects\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ActuarialIntelligence.Infrastructure.Data\ActuarialIntelligence.Infrastructure.Data.csproj">
+      <Project>{5701E063-EB92-4AC1-8929-43C95A4815C2}</Project>
+      <Name>ActuarialIntelligence.Infrastructure.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
