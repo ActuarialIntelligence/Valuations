@@ -7,8 +7,10 @@ namespace ActuarialIntelligence.Domain.ContainerObjects.Expectance
 {
     public class Expectance
     {
-        /// <summary>
+        ///
         /// 
+        /// <summary>
+        /// All of this starts at Time zero to term remaining on policy; Set timeIncrement to remaining duration on policy
         /// </summary>
         /// <param name="SurvivalCdf">Probability of surviving for time t in live state</param>
         /// <param name="PDF"></param>
