@@ -50,6 +50,7 @@
     <Compile Include="Enums\DateIncrementTypes.cs" />
     <Compile Include="Enums\TimeIncrementTypes.cs" />
     <Compile Include="Financial Instrument Objects\BondHalfYearly.cs" />
+    <Compile Include="Financial Instrument Objects\DiscountFactor.cs" />
     <Compile Include="Financial Instrument Objects\HalfYearlyBondYield.cs" />
     <Compile Include="Hazard.cs" />
     <Compile Include="KaplanMeier.cs" />
