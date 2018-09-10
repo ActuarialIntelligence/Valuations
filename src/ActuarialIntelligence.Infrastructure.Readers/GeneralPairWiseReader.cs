@@ -6,10 +6,10 @@ using System.Collections.Generic;
 
 namespace ActuarialIntelligence.Infrastructure.Readers
 {
-    public class YieldCurveReader : IDataReader<YieldCurve>
+    public class GeneralPairWiseReader : IDataReader<YieldCurve>
     {
         private readonly IDataConnection<IList<SimpleArray>> connection;
-        public YieldCurveReader(IDataConnection<IList<SimpleArray>> connection)
+        public GeneralPairWiseReader(IDataConnection<IList<SimpleArray>> connection)
         {
             this.connection = connection;
         }
