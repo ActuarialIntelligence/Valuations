@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace ActuarialIntelligence.Infrastructure.Readers
 {
-    public class GeneralPairWiseReader : IDataReader<YieldCurve>
+    public class GeneralPairWiseReader : IDataReader<Curve>
     {
         private readonly IDataConnection<IList<SimpleArray>> connection;
         public GeneralPairWiseReader(IDataConnection<IList<SimpleArray>> connection)
@@ -18,7 +18,7 @@ namespace ActuarialIntelligence.Infrastructure.Readers
             throw new System.NotImplementedException();
         }
 
-        public YieldCurve GetData()
+        public Curve GetData()
         {
             var yieldDictionary = new Dictionary<int, double>();
             var rows = connection.LoadData();
@@ -26,7 +26,7 @@ namespace ActuarialIntelligence.Infrastructure.Readers
             {
                 yieldDictionary.Add(int.Parse(row.array[0]), double.Parse(row.array[1]));
             }
-            var yieldCurve = new YieldCurve(yieldDictionary);
+            var yieldCurve = new Curve(yieldDictionary);
             return yieldCurve;
         }
     }

@@ -2,10 +2,10 @@
 
 namespace ActuarialIntelligence.Domain.ContainerObjects
 {
-    public class YieldCurve
+    public class Curve
     {
         public IDictionary<int, double> keyValuePairs { get; private set; }
-        public YieldCurve(IDictionary<int,double> keyValuePairs)
+        public Curve(IDictionary<int,double> keyValuePairs)
         {
             this.keyValuePairs = keyValuePairs;
         }

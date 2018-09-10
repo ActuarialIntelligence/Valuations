@@ -45,10 +45,11 @@
     <Compile Include="ContainerObjects\BondDetails.cs" />
     <Compile Include="ContainerObjects\Expectance\Expectance.cs" />
     <Compile Include="ContainerObjects\ListTermCashflowSet.cs" />
-    <Compile Include="ContainerObjects\YieldCurve.cs" />
+    <Compile Include="ContainerObjects\Curve.cs" />
     <Compile Include="Date\DateIncrement.cs" />
     <Compile Include="DBHazardPDF.cs" />
     <Compile Include="Enums\DateIncrementTypes.cs" />
+    <Compile Include="Enums\PolicyType.cs" />
     <Compile Include="Enums\TimeIncrementTypes.cs" />
     <Compile Include="Expectance\PolicyExpectance.cs" />
     <Compile Include="Financial Instrument Objects\BondHalfYearly.cs" />
@@ -86,14 +87,13 @@
     <Compile Include="PnL\AtRisk.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Financial Instrument Objects\ZSpread.cs" />
+    <Compile Include="Reader Domain Objects\PolicyData.cs" />
     <Compile Include="Regression\BasicRegresssionCalcs.cs" />
     <Compile Include="Regression\UnivariateRegressionFitting.cs" />
     <Compile Include="StatAIEntities.cs" />
     <Compile Include="Time\TimeIncrement.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Reader Domain Objects\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\ActuarialIntelligence.Infrastructure.Data\ActuarialIntelligence.Infrastructure.Data.csproj">
       <Project>{5701E063-EB92-4AC1-8929-43C95A4815C2}</Project>
