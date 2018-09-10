@@ -45,6 +45,7 @@
     <Compile Include="ContainerObjects\BondDetails.cs" />
     <Compile Include="ContainerObjects\Expectance\Expectance.cs" />
     <Compile Include="ContainerObjects\ListTermCashflowSet.cs" />
+    <Compile Include="ContainerObjects\YieldCurve.cs" />
     <Compile Include="Date\DateIncrement.cs" />
     <Compile Include="DBHazardPDF.cs" />
     <Compile Include="Enums\DateIncrementTypes.cs" />
