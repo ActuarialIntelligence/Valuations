@@ -49,5 +49,28 @@ namespace ActuarialIntelligence.Domain.ContainerObjects.Expectance
             return result;
         }
 
+        /// <summary>
+        /// Use this if CDF values are retrieved externally.
+        /// </summary>
+        /// <param name="SurvivalCdf"></param>
+        /// <param name="conditionalFundValueAtTime"></param>
+        /// <param name="dateIncrementTypes"></param>
+        /// <param name="timeIncrement"></param>
+        /// <returns></returns>
+        public static double ReturnExpectedValue(IDictionary<int, decimal> SurvivalCdf,
+        IDictionary<int, decimal> conditionalFundValueAtTime, 
+        DateIncrementTypes dateIncrementTypes, int timeIncrement, int yield)
+        {
+            var result = 0d;
+            var cnt = 0;
+            foreach (var point in conditionalFundValueAtTime)
+            {
+                result += (double)(SurvivalCdf[cnt]
+                    * point.Value * DiscountFactor.discountFactor(yield, timeIncrement));
+                cnt++;
+            }
+            return result;
+        }
+
     }
 }

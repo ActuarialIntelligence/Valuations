@@ -50,6 +50,7 @@
     <Compile Include="DBHazardPDF.cs" />
     <Compile Include="Enums\DateIncrementTypes.cs" />
     <Compile Include="Enums\TimeIncrementTypes.cs" />
+    <Compile Include="Expectance\PolicyExpectance.cs" />
     <Compile Include="Financial Instrument Objects\BondHalfYearly.cs" />
     <Compile Include="Financial Instrument Objects\DiscountFactor.cs" />
     <Compile Include="Financial Instrument Objects\HalfYearlyBondYield.cs" />
@@ -91,7 +92,6 @@
     <Compile Include="Time\TimeIncrement.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Expectance\" />
     <Folder Include="Reader Domain Objects\" />
   </ItemGroup>
   <ItemGroup>
