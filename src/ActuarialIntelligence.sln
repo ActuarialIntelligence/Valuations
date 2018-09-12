@@ -55,6 +55,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelpfulNotes", "HelpfulNote
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActuarialIntelligence.Application.Web", "ActuarialIntelligence.Application.Web\ActuarialIntelligence.Application.Web.csproj", "{529E7524-57EA-43C7-A9B9-807B4BA189B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActuarialIntelligence.Infrastructure.Data.EF", "ActuarialIntelligence.Infrastructure.Data.EF\ActuarialIntelligence.Infrastructure.Data.EF.csproj", "{B3E2275F-F3D0-4C9B-9EA5-7BFC66D90869}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{529E7524-57EA-43C7-A9B9-807B4BA189B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{529E7524-57EA-43C7-A9B9-807B4BA189B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{529E7524-57EA-43C7-A9B9-807B4BA189B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3E2275F-F3D0-4C9B-9EA5-7BFC66D90869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3E2275F-F3D0-4C9B-9EA5-7BFC66D90869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3E2275F-F3D0-4C9B-9EA5-7BFC66D90869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3E2275F-F3D0-4C9B-9EA5-7BFC66D90869}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -135,6 +141,7 @@ Global
 		{06C9BD66-FB54-4093-8340-43FC1F4394E4} = {6373E067-6C1B-4351-AF04-BA47828735FE}
 		{9CF5491D-E0A1-4447-BC64-9AD143E6EB78} = {3B8E354A-F06D-409F-BC16-7447A8519DA1}
 		{8F2891FE-0579-4712-88C8-D68889425EC8} = {1D5CB254-EE62-486B-A836-4340B28879D6}
+		{B3E2275F-F3D0-4C9B-9EA5-7BFC66D90869} = {6373E067-6C1B-4351-AF04-BA47828735FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7AFF1FB0-27A8-4765-900D-F53F52605824}
