@@ -31,7 +31,7 @@ namespace ActuarialIntelligence.Calculators
             foreach(var policy in policyData)
             {
                 totalExpectedPayout += Expectance.ReturnExpectedValue(survivalRatesByTerm.keyValuePairs,
-                    policyData, Domain.Enums.DateIncrementTypes.Month, yieldCurve.keyValuePairs, 30);
+                    policyData, Domain.Enums.DateIncrementTypes.Month, yieldCurve.keyValuePairs, (12*50));
             }
             throw new System.NotImplementedException();
         }
