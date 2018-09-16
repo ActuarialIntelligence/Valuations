@@ -55,12 +55,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ActuarialValuations.Context.tt</DependentUpon>
     </Compile>
+    <Compile Include="ActuarialValuations.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActuarialValuations.tt</DependentUpon>
+    </Compile>
     <Compile Include="ActuarialValuations.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ActuarialValuations.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValuattionSetting.cs">
+      <DependentUpon>ActuarialValuations.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="ActuarialValuations.edmx">
@@ -79,6 +87,12 @@
     <Content Include="ActuarialValuations.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ActuarialValuations.Context.cs</LastGenOutput>
+      <DependentUpon>ActuarialValuations.edmx</DependentUpon>
+    </Content>
+    <Content Include="ActuarialValuations.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ActuarialValuations.edmx</DependentUpon>
+      <LastGenOutput>ActuarialValuations.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
